@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        /* Reset some default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    
+}
+
+header {
+    background-color: #11101D;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  
+}
+
+section:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 5);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Add specific styling for each section */
+
+#overview {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#engagement {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#audience {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#popular-content {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#demographics {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#collaborations {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+#revenue {
+    background-color: #e0f7fa;
+    width: 350px;
+    height: 400px;
+}
+
+/* Add styles for footer */
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add transition for all links */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4081;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.analytics_div{
+display: inline-flex;
+flex-wrap: wrap;
+margin-left: 8%;
+width: 100%;
+
+
+}
+.graphimg{
+    border-radius: 10px;
+}
+.imgpara{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: aqua; */
+    width: fit-content;
+}
+.imginfo{
+    font-weight: 800;
+    font-size:x-small;
+    color:blue
+}
+
+p{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.home-section{
+  margin-top: 0;
+  margin-left: 0;
+  width: 1500px;
+}
+
+     </style>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">ArtWeb</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="user.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="message.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="analytics.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="media.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Media</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="order.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="saved.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="setting.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Nishit Sharma</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+
+
+  <!-- content -->
+  <section class="home-section">
+     
+    
+    <header>
+        <h1>Account Analytics</h1>
+        <!-- Add navigation links or menu here -->
+    </header>
+    <div class="analytics_div">
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <!-- Add overview analytics content here -->
+        <img class="graphimg"  width="100%" height="60%" src="image/chart 1 gif.gif">
+        <p> <span class="para_span"><span class="imgpara">~Impressions</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">+1.5L</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Total views</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata2"><span style="color: rgb(0, 133, 18)">+60k</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Total Connections</span><span class="imginfo"></span></span><span class="imgdata">+12K</span></p>
+    </section>
+
+    <section id="engagement">
+        <h2>Engagement Metrics</h2>
+        <!-- Add engagement metrics content here -->
+        <img class="graphimg" width="100%" height="60%" src="image/Animating a circle border to fill up.gif">
+        <p> <span class="para_span"><span class="imgpara">~Post Reachment</span><span class="imginfo">(last 1 month)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">1L</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~connection Average Rate</span><span class="imginfo">(last 2 Month)</span></span><span class="imgdata2"><span style="color: rgb(0, 133, 18)">+70%</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~post Likes Rate</span><span class="imginfo">(last 5 hour)</span></span><span class="imgdata">+90%</span></p>
+    </section>
+
+    <section id="audience">
+        <h2>Audience Insights</h2>
+        <!-- Add audience insights content here -->
+        <img class="graphimg" width="100%" height="60%" src="image/Animated chart.gif">
+
+      <p> <span class="para_span"><span class="imgpara">~New viewers</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">4K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Returning viewers</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata2"><span style="color: red">-200</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~connections</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata">+500</span></p>
+    
+</section>
+
+    <section id="popular-content">
+        <h2>Popular Content</h2>
+        <!-- Add popular content analytics content here -->
+        <img class="graphimg" width="100%" height="60%" src="image/Circle Chart.gif">
+        <p> <span class="para_span"><span class="imgpara">~Last Post views</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">+15K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Total Likes</span><span class="imginfo"></span></span><span class="imgdata2"><span style="color:rgb(0, 133, 18)">2K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Shares</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata">+600</span></p>
+    </section>
+
+    <section id="demographics">
+        <h2>Demographics</h2>
+        <!-- Add demographics analytics content here -->
+        <img class="graphimg" width="100%" height="60%" src="image/infographic  Animation.gif">
+        <p> <span class="para_span"><span class="imgpara">~Viewer</span><span class="imginfo">(age 15 to 25)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">2K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~New viewer</span><span class="imginfo">(Age 20 to 30)</span></span><span class="imgdata2"><span style="color: red">+200</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~connections average age</span><span class="imginfo"></span></span><span class="imgdata">26 year</span></p>
+    </section>
+
+    <section id="collaborations">
+        <h2>Collaborations</h2>
+        <!-- Add collaborations analytics content here -->
+        <img class="graphimg" width="100%" height="60%" src="image/Radial Graph Animation.gif">
+        <p> <span class="para_span"><span class="imgpara">~Collaboration with customer</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">4K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Networks</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata2"><span style="color: red">+200</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~connections</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata">+500</span></p>
+
+    </section>
+
+    <section id="revenue">
+        <h2>Revenue and Sales</h2>
+        <img class="graphimg" width="100%" height="60%" src="image/Dashboard Visualizations_ Pie Chart _ Data visualization design, Diagram design, Infographic design layout.gif">
+        <!-- Add revenue and sales analytics content here -->
+        <p> <span class="para_span"><span class="imgpara">~Total revenue</span><span class="imginfo"></span></span><span class="imgdata1"><span style="color: rgb(0, 133, 18)">+15k</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~Sale of last post</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata2"><span style="color: red">-3K</span></span></p>
+    <p><span class="para_span"><span class="imgpara">~last post revenue</span><span class="imginfo">(last 28 days)</span></span><span class="imgdata">+9k</span></p>
+    </section>
+</div>
+    <section id="footer">
+        <!-- Add footer content here -->
+        <p>&copy; 2023 Artist & Designer Social Media Platform. All rights reserved.</p>
+    </section>
+
+    <!-- Add your JavaScript scripts and links here -->
+    
+</body>
+
+</html>
+
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>

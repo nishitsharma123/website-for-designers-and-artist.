@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/Musical_Instruments_Wall_Stencil_-_36___Drum_Set_Stencil-removebg-preview.png"
+    },
+    {
+        "id": 2,
+        "name":" LD02 LOUNGE CHAIR",
+        "price": 250,
+        "image": "image/Saxophone_Instrument_Vector_Design_Images__Saxophone_Modern_Musical_Instrument_Metal__Gold__Good__Popular_PNG_Image_For_Free_Download-removebg-preview.png"
+    },
+    {
+        "id": 3,
+        "name":" LD03 LOUNGE CHAIR",
+        "price": 290,
+        "image": "image/The_Veena_Ancient_Musical_Instruments_PNG_Images___Musical_Instrument__Png__Vector_PNG_Transparent_Background_-_Pngtree-removebg-preview.png"
+    },
+    {
+        "id": 4,
+        "name":" LD04 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/Violine_Clipart_Hd_PNG__Violin__Violin_Clipart__Musical_Instrument__Beautiful_PNG_Image_For_Free_Download-removebg-preview.png"
+    },
+    {
+        "id": 5,
+        "name":" LD05 LOUNGE CHAIR",
+        "price": 300,
+        "image": "image/Music_Note_PNG_Transparent__Abstract_Musical_Notes__Abstract_Vector__Abstract__Note_PNG_Image_For_Free_Download-removebg-preview.png"
+    },
+    {
+        "id": 6,
+        "name":" LD06 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/Lewitt_MTP_440_DM-removebg-preview.png"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/Free_Hand_Rangoli_Design_Images__Kolam_Ideas_-removebg-preview.png"
+    },
+    {
+        "id": 8,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/Mandala_PNG_Transparent_Images_Free_Download___Vector_Files___Pngtree-removebg-preview.png"
+    }
+
+]

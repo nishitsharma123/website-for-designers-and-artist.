@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1b31;
+            color: #333;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        header {
+          position: fixed;
+            background-color: #1d1b31;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            transition: background-color 0.3s ease;
+            border-radius: 10px;
+            border: solid 2px white;
+            
+        }
+        
+
+        section {
+            width: 500px;
+            margin: 20px auto;
+            background-color: #1d1b31;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255);
+            transition: box-shadow 0.3s ease;
+            margin: 50px;
+            margin-left: 0px;
+            color: white;
+            border: solid 2px white;
+            
+        }
+        .sectiondiv{
+          display: inline-flex;
+          margin-left: 160px;
+        }
+        .thirdsection{
+          margin-left: 160px;
+        }
+        .sectiondiv2{
+          display: inline-flex;
+
+        }
+        section:hover{
+          box-shadow: 0px 0px 20px rgba(0, 0, 0)
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #1d1b31;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            border-radius: 10px;
+            margin-left: 0;
+            border: 2px white solid;
+            
+          }
+
+        /* Hover effects */
+        label:hover {
+            color: #555;
+        }
+
+        input, select:hover {
+            border-color: #555;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        h2{
+          color: white;
+        }
+        
+   </style>
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">ArtWeb</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="user.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="message.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="analytics.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="media.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Media</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="order.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="saved.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="setting.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Nishit Sharma</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section style="margin-top: 0;" class="home-section">
+      
+
+    <header>
+        <h1>Settings</h1>
+    </header>
+<div class="sectiondiv">
+    <section>
+        <h2>Account Settings</h2>
+        <form id="accountSettingsForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="Nishit Sharma">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="nishitshrama@example.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <input type="submit" value="Save Changes">
+        </form>
+    </section>
+
+    <section>
+        <h2>Privacy Settings</h2>
+        <form id="privacySettingsForm">
+            <label for="visibility">Profile Visibility:</label>
+            <select id="visibility" name="visibility">
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+
+            <label for="notifications">Receive Notifications:</label>
+            <input type="checkbox" id="notifications" name="notifications" checked>
+
+            <label for="emailUpdates">Receive Email Updates:</label>
+            <input type="checkbox" id="emailUpdates" name="emailUpdates" checked>
+
+            <input type="submit" value="Save Changes">
+        </form>
+    </section>
+</div>
+<div class="sectiondiv2">
+    <section class="thirdsection">
+        <h2>Notification Preferences</h2>
+        <form id="notificationPreferencesForm">
+            <label for="emailNotifications">Email Notifications:</label>
+            <input type="checkbox" id="emailNotifications" name="emailNotifications" checked>
+
+            <label for="pushNotifications">Push Notifications:</label>
+            <input type="checkbox" id="pushNotifications" name="pushNotifications" checked>
+
+            <label for="smsNotifications">SMS Notifications:</label>
+            <input type="checkbox" id="smsNotifications" name="smsNotifications" checked>
+
+            <label for="notificationSound">Notification Sound:</label>
+            <select id="notificationSound" name="notificationSound">
+                <option value="default">Default</option>
+                <option value="chime">Chime</option>
+                <option value="bell">Bell</option>
+            </select>
+
+            <input type="submit" value="Save Changes">
+        </form>
+    </section>
+
+
+    <section>
+    <h2>Security Settings</h2>
+
+    <form action="#" method="post">
+        <label>Change Password:</label>
+        <input type="password" id="currentPassword" name="currentPassword" placeholder="Current Password" required>
+        <input type="password" id="newPassword" name="newPassword" placeholder="New Password" required>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+
+        <label>Password Strength:</label>
+        <progress id="passwordStrength" max="100" value="0"></progress>
+
+        <label for="twoFactorAuth">Enable Two-Factor Authentication:</label>
+        <input type="checkbox" id="twoFactorAuth" name="twoFactorAuth">
+
+        <label for="backupCodes">Generate Backup Codes:</label>
+        <input type="checkbox" id="backupCodes" name="backupCodes">
+
+        <button style="border-radius: 10px;" type="submit">Save Security Settings</button>
+    </form>
+    </section>
+  </div>
+    <footer>
+        <p>&copy; 2023 ArtWeb | All Right Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for form validation and submission
+        document.getElementById('accountSettingsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Account settings saved!');
+        });
+
+        document.getElementById('privacySettingsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Privacy settings saved!');
+        });
+
+        document.getElementById('notificationPreferencesForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Notification preferences saved!');
+        });
+
+
+        const passwordInput = document.getElementById('newPassword');
+        const strengthIndicator = document.getElementById('passwordStrength');
+
+        passwordInput.addEventListener('input', () => {
+            const password = passwordInput.value;
+            const strength = calculatePasswordStrength(password);
+            strengthIndicator.value = strength;
+        });
+
+        function calculatePasswordStrength(password) {
+            // Simple logic to calculate password strength
+            // You can replace this with a more sophisticated algorithm
+            return Math.min(password.length, 100);
+            alert("password is confirmed")
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+    </script>
+
+
+
+</body>
+</html>

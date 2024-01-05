@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #000;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+
+
+
+
+
+
+main {
+    background-color: #162938;
+    padding-top: 80px;
+    margin-top: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 550px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    z-index: -1;
+box-shadow: 2px 0px 30px #162938;
+color: #fff;
+}
+
+.about-us h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team .member {
+    text-align: center;
+}
+
+.team .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    box-shadow: 0px 0px 20px #fff;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">ArtWeb</h2>
+        <nav class="navigation">
+            <a href="homepage.html" class="active">Home</a>
+            <a href="Aboutus.html">About</a>
+            <!-- <a href="Service.html">Service</a> -->
+            <a href="contact.html">Contact</a>
+            <a href="signin.html">Sign in</a>
+            
+            <!-- <button class="btnlogin-popup">Login</button> -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h1>Welcome to Our Website</h1>
+            <p>
+                Welcome to our vibrant community, where creativity knows no bounds! We are a dedicated social media platform crafted exclusively for artists and designers, providing a dynamic space for individuals to showcase their unique talents and connect with like-minded visionaries. Our platform is born out of a passion for fostering a supportive environment that celebrates the diverse forms of artistic expression. Whether you're a seasoned artist or an emerging designer, this is your digital canvas to share your portfolio, engage in meaningful conversations, and discover endless inspiration. Join us on this exciting journey where art and design converge, and let's build a global network that empowers the creative spirit within us all. Together, we redefine the boundaries of imagination and cultivate a community that propels artistic endeavors to new heights.
+                
+            </p>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="member">
+                <img src="image/IMG_20231011_201741.jpg" alt="Member 1">
+                <h3>Nishit Sharma</h3>
+                <p>Web developer</p>
+            </div>
+            <div class="member">
+                <img src="image/WhatsApp Image 2023-11-23 at 9.52.01 PM.jpeg" alt="Member 2">
+                <h3>Sanchit Singh</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="member">
+                <img src="image/WhatsApp Image 2023-11-23 at 9.52.00 PM.jpeg" alt="Member 3">
+                <h3>Om Pandey</h3>
+                <p>Web developer</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ArtWeb. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Same styling as before */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #dashboard {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #reels {
+            flex: 1;
+            overflow-y: scroll;
+            max-height: 500px; /* Adjust as needed */
+            border: 1px solid #ddd;
+            margin-right: 20px;
+            margin-left: 200px;
+            margin-top: 80px;
+        }
+
+        #suggestions {
+            flex: 0 0 350px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin:auto;
+            box-shadow: 2px 2px 10px #000;
+            margin-left: 30px;
+            
+        }
+        .suggestion-item{
+      text-align: left;
+      display: inline-flex
+        }
+
+        #profile {
+            flex: 0 0 300px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin:auto;
+            box-shadow: 2px 2px 10px #000;
+            margin-left: 30px;
+        
+        }
+        .reel{
+          height: 500px;
+          background-color: #fff;
+          width: 450px;
+          border:solid 2px #000 ;
+          /* align-items: center; */
+          padding-left:25px ;
+          /* text-align: center; */
+          padding-top: 10px;
+
+        }
+        .imgdiv{
+          height: 300px;
+          width: 400px;
+          border-radius: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">ArtWeb</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="user.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="message.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="analytics.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="media.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Media</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="order.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="saved.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="setting.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Nishit Sharma</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    
+
+      <div class="text"><div id="dashboard">
+        <div id="reels">
+            <!-- Infinite scrolling reels content goes here -->
+        <div class="reel"><img class='imgdiv' src="image/3D Typography by Jenue _ Inspiration Grid.jpg">
+        <img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+      <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+    <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/4.jpg">
+          <img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/aot.jpeg">
+          <img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p>
+      </div>
+        <div class="reel"><img class='imgdiv' src="image/Artist In Brazil Goes Viral After Using Trees As ‘Hair’ For His Women’s Portraits.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Cassie Byrnes - The Design Files _ Australia's most popular design blog_.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Creative photography ideas ❤️❤️❤️.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Dashboard Visualizations_ Pie Chart _ Data visualization design, Diagram design, Infographic design layout.gif"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Infinite Blue Flower - Gallery Wrap _ 80x40 _ 5 Piece.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Violine_Clipart_Hd_PNG__Violin__Violin_Clipart__Musical_Instrument__Beautiful_PNG_Image_For_Free_Download-removebg-preview.png"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/The_Veena_Ancient_Musical_Instruments_PNG_Images___Musical_Instrument__Png__Vector_PNG_Transparent_Background_-_Pngtree-removebg-preview.png"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Eiffel Tower Paris France Downtown Photography Blue Canvas Metal Print Livingroom Bedroom Wall Art Poster Decor Europe Night Long Exposure.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/68839011-social-media-communication-concept-internet-network-connection-people-doodle-hand-draw-sketch.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/CHAMELEON, Multicolor-White, Paper Artwork, Colorful Wall Art, Wall Hanging.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/female-character-doctor-chibi-pixar-full-body-3d-white-background_300636-823.jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Lewitt_MTP_440_DM-removebg-preview.png"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+        <div class="reel"><img class='imgdiv' src="image/Free Hand Rangoli Design Images (Kolam Ideas).jpg"><img height="40px" src="image/Screenshot 2023-11-24 073121.png">
+          <p style="font-size: 15px;">#art #artist #love #drawing #photography #artwork #instagood #photooftheday</p>
+        <p style="font-size: 15px;">Here is my new post, Post your thoughts in comment</p></div>
+
+          </div>
+
+
+          <div id="suggestions">
+            <h2 style="font-size:25px;">Suggestions</h2>
+            <!-- Suggestions box content goes here -->
+            <div class="suggestion-item"><p style="font-size: large;">sanchit singh
+              <br>@Sanchitsingh345
+            </p>
+          <button style="background-color: skyblue; margin-top: 10px; margin-left: 50px;  height: 30px; width: 70px; border: 2px solid skyblue; border-radius: 10px;">follow</button></div>
+            <div class="suggestion-item"><p style="font-size: large;">om pandey<br>@ompandey789</p>
+              <button style="background-color: skyblue; margin-top: 10px; margin-left: 70px;  height: 30px; width: 70px; border: 2px solid skyblue; border-radius: 10px;">follow</button></div>
+            <!-- Add more suggestion items dynamically -->
+            <div class="suggestion-item"><p style="font-size: large;">Gyan giri<br>@gyangiri789</p>
+              <button style="background-color: skyblue; margin-top: 10px; margin-left: 95px;  height: 30px; width: 70px; border: 2px solid skyblue; border-radius: 10px;">follow</button></div>
+            <!-- Add more suggestion items dynamically -->
+        
+        <div class="suggestion-item"><p style="font-size: large;">peter dean<br>@peterdean489</p>
+          <button style="background-color: skyblue; margin-top: 10px; margin-left: 75px;  height: 30px; width: 70px; border: 2px solid skyblue; border-radius: 10px;">follow</button></div>
+        <!-- Add more suggestion items dynamically -->
+      
+          </div>
+        
+        
+      
+      
+        <div id="profile">
+            <h2 style="font-size:25px;">Profile</h2>
+            <img height="150px;" style="border-radius: 100px;" src="image/IMG_20231011_201741.jpg">
+            <!-- Profile section content goes here -->
+            <p style="font-size: large;"><a href="user.html">@nishitsharma123</a></p>
+            <p style="font-size: large;">Followers: 1000</p>
+            <p style="font-size: large;">Following: 50</p>
+            <p style="font-size: large;">posts: 45</p>
+            <!-- Add more profile information -->
+        </div>
+      </div>
+      </div>
+    
+        
+      
+
+
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  
+
+
+
+
+
+
+  let reelsData = Array.from({ length: 20 }, (_, i) => `Reel ${i + 1}`);
+    const reelsContainer = document.getElementById('reels');
+
+    // Function to create reel items
+    function createReelItem(content) {
+        const reelItem = document.createElement('div');
+        reelItem.className = 'reel-item';
+        reelItem.textContent = content;
+        return reelItem;
+    }
+
+    // Function to update reels content
+    function updateReelsContent() {
+        // Add new content
+        reelsData.forEach((content) => {
+            reelsContainer.appendChild(createReelItem(content));
+        });
+    }
+
+    // Function to simulate fetching more reels data
+    function fetchMoreReels() {
+        // Simulating an asynchronous data fetch
+        setTimeout(() => {
+            const newReelsData = Array.from({ length: 10 }, (_, i) => `New Reel ${reelsData.length + i + 1}`);
+            reelsData = [...reelsData, ...newReelsData];
+            updateReelsContent();
+        }, 1000);
+    }
+
+    // Initial update of reels content
+    updateReelsContent();
+
+    // Event listener for scrolling to the bottom of the reels
+    reelsContainer.addEventListener('scroll', function () {
+        if (this.scrollHeight - this.scrollTop === this.clientHeight) {
+            // When at the bottom, fetch more reels
+            fetchMoreReels();
+        }
+    });
+</script>
+
+</body>
+</html>

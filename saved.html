@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.gallery{
+    min-height: 100vh;
+    background:#eee;
+    padding-bottom: 100px;
+}
+
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons{
+    height:40px;
+    width: 140px;
+    background:#fff;
+    color:#666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gallery .controls .buttons.active{
+    background:coral;
+    color:#fff;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border-radius: 10px; */
+}
+
+.gallery .image-container .image{
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border:15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.gallery .image-container .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img{
+    transform: scale(1.4);
+}
+   </style>
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">ArtWeb</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="user.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="message.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="analytics.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="media.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Media</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="order.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="saved.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="setting.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Nishit Sharma</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      
+      <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="ice-cream">Arts</li>
+            <li class="buttons" data-filter="chocolate">Creativity</li>
+            <li class="buttons" data-filter="cake">Designs</li>
+            <li class="buttons" data-filter="juice">Reels</li>
+            <li class="buttons" data-filter="sandwich">Top content</li>
+            <!-- <li class="buttons" data-filter="sandwich"><a class="home" style="text-decoration: none;" href="index.html">Home</a></li> -->
+        </ul>
+        <!-- <li class="buttons" data-filter="sandwich"><a class="home" style="text-decoration: none;" href="index.html">Home</a></li> -->
+        <div class="image-container">
+    
+            <a href="image/2.png" class="image ice-cream">
+                <img src="image/2.png" alt="">
+            </a>
+            <a href="image/3.jpg" class="image ice-cream">
+                <img src="image/3.jpg" alt="">
+            </a>
+            <a href="image/4.jpg" class="image ice-cream">
+                <img src="image/4.jpg" alt="">
+            </a>
+    
+            <a href="image/Artist In Brazil Goes Viral After Using Trees As ‘Hair’ For His Women’s Portraits.jpg" class="image chocolate">
+                <img src="image/Artist In Brazil Goes Viral After Using Trees As ‘Hair’ For His Women’s Portraits.jpg" alt="">
+            </a>
+            <a href="image/Cassie Byrnes - The Design Files _ Australia's most popular design blog_.jpg" class="image chocolate">
+                <img src="image/Cassie Byrnes - The Design Files _ Australia's most popular design blog_.jpg" alt="">
+            </a>
+    
+            <a href="image/Free Hand Rangoli Design Images (Kolam Ideas).jpg" class="image cake">
+                <img src="image/Free Hand Rangoli Design Images (Kolam Ideas).jpg" alt="">
+            </a>
+            <a href="image/Mandala PNG Transparent Images Free Download _ Vector Files _ Pngtree.jpg" class="image cake">
+                <img src="image/Mandala PNG Transparent Images Free Download _ Vector Files _ Pngtree.jpg" alt="">
+            </a>
+            <a href="image/3D Typography by Jenue _ Inspiration Grid.jpg" class="image cake">
+                <img src="image/3D Typography by Jenue _ Inspiration Grid.jpg" alt="">
+            </a>
+            <a href="image/The_Veena_Ancient_Musical_Instruments_PNG_Images___Musical_Instrument__Png__Vector_PNG_Transparent_Background_-_Pngtree-removebg-preview.png" class="image cake">
+                <img src="image/The_Veena_Ancient_Musical_Instruments_PNG_Images___Musical_Instrument__Png__Vector_PNG_Transparent_Background_-_Pngtree-removebg-preview.png" alt="">
+            </a>
+            <a href="image/New York Artist Covers Everything In Rainbow Colors Gets Amazing Results_.jpg" class="image cake">
+                <img src="image/New York Artist Covers Everything In Rainbow Colors Gets Amazing Results_.jpg" alt="">
+            </a>
+    
+            <a href="image/Modular Kitchen Designs With Prices _ HomeLane.jpg" class="image juice">
+                <img src="image/Modular Kitchen Designs With Prices _ HomeLane.jpg" alt="">
+            </a>
+            <a href="image/Illustration Art for Inspiration by Charlie Davis.jpg" class="image juice">
+                <img src="image/Illustration Art for Inspiration by Charlie Davis.jpg" alt="">
+            </a>
+            <a href="image/Colorful Artist Branding Photography in Long Beach - chelsealoren_co.jpg" class="image juice">
+                <img src="image/Colorful Artist Branding Photography in Long Beach - chelsealoren_co.jpg" alt="">
+            </a>
+    
+            <a href="image/Peacock Feathers Peel & Stick Wallpaper N014051.jpg" class="image sandwich">
+                <img src="image/Peacock Feathers Peel & Stick Wallpaper N014051.jpg" alt="">
+            </a>
+            <a href="image/Nature's Symphony_ Rustic Charm for Every Hour_ wall cllock design home interior decor ideas clocks.jpg" class="image sandwich">
+                <img src="image/Nature's Symphony_ Rustic Charm for Every Hour_ wall cllock design home interior decor ideas clocks.jpg" alt="">
+            </a>
+            <a href="image/Eiffel Tower Paris France Downtown Photography Blue Canvas Metal Print Livingroom Bedroom Wall Art Poster Decor Europe Night Long Exposure.jpg" class="image sandwich">
+                <img src="image/Eiffel Tower Paris France Downtown Photography Blue Canvas Metal Print Livingroom Bedroom Wall Art Poster Decor Europe Night Long Exposure.jpg" alt="">
+            </a>
+            <a href="image/Infinite Blue Flower - Gallery Wrap _ 80x40 _ 5 Piece.jpg" class="image sandwich">
+                <img src="image/Infinite Blue Flower - Gallery Wrap _ 80x40 _ 5 Piece.jpg" alt="">
+            </a>
+    
+        </div>
+    
+    </div>
+    
+    
+  
+    
+
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+</script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script>
+    
+    $(document).ready(function(){
+    
+        $('.buttons').click(function(){
+    
+            $(this).addClass('active').siblings().removeClass('active');
+    
+            var filter = $(this).attr('data-filter')
+    
+            if(filter == 'all'){
+                $('.image').show(400);
+            }else{
+                $('.image').not('.'+filter).hide(200);
+                $('.image').filter('.'+filter).show(400);
+            }
+    
+        });
+    
+        $('.gallery').magnificPopup({
+    
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+    
+        });
+    
+    });
+    
+  </script>
+</body>
+</html>
